@@ -1,6 +1,6 @@
 
 # Laboratorio I-2024
-## <sup>Asignatura: Patrones de Software y Programación </sup> <br><sup>Profesor: Daniel San Martín</sup> <br> <sup> Nombre Estudiante: Clerians Marquez Carvajal </sup>
+## <sup>Asignatura: Patrones de Software y Programación </sup> <br><sup>Profesor: Daniel San Martín</sup> <br> <sup> Nombre Estudiante: Clerians Márquez Carvajal </sup>
 <hr>
 Dado el enunciado a continuación, implemente el patrón de diseño que usted considere necesario
 para dar solución al requerimiento. Además, explique porqué escogió el patrón, cual es su característica
@@ -34,7 +34,8 @@ los permisos o no, de acuerdo al archivo asignado por defecto.
 <hr>
 
 ## Explicación
+Para controlar el acceso a los archivos protegidos se podria utilizar el patron estructural Proxy, ya que, su objetivo es mediar el acceso a un objeto base, agregándole funcionalidades, sin que este tenga conocimiento de ello. Por lo tanto, dentro del problema se asegura de que solo los usuarios permitidos tengan acceso a los archivos.
 
-
+Mientras que para la busqueda de un usuario en la base de datos, se podria utilizar un patron creacinal, en este caso factory, buscar y ver si existe dentro del archivo csv.
 
 <hr>
