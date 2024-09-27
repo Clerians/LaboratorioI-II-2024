@@ -36,6 +36,6 @@ los permisos o no, de acuerdo al archivo asignado por defecto.
 ## Explicación
 Para controlar el acceso a los archivos protegidos se podria utilizar el patron estructural Proxy, ya que, su objetivo es mediar el acceso a un objeto base, agregándole funcionalidades, sin que este tenga conocimiento de ello. Por lo tanto, dentro del problema se asegura de que solo los usuarios permitidos tengan acceso a los archivos.
 
-Mientras que para la busqueda de un usuario en la base de datos, se podria utilizar un patron creacinal, en este caso factory, buscar y ver si existe dentro del archivo csv.
+Mientras que para la busqueda de un usuario en la base de datos, se podria utilizar un patron creacinal, en este caso factory para buscar y ver si existe el usuario dentro del archivo.
 
 <hr>
