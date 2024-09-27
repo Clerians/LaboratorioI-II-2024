@@ -22,15 +22,13 @@ public class Main {
         }
 
 
-        /*jpql = "SELECT u from Usuario u";
-        TypedQuery<Usuario> query1 = em.createQuery(jpql, Usuario.class);
-        List<Usuario> usuarios = query1.getResultList();
-        for (Usuario usuario : usuarios){
+        if (usuario != null && usuario.getRecursosMultimedia() != null) {
+            RecursosMultimedia recurso = usuario.getRecursosMultimedia();
 
-            System.out.println("Rut: " + usuario.getRut() + " Permiso: " + usuario.isTienePermiso() + " Archivo: " +
-                    usuario.getRecursosMultimedia().getNombre() + " Protegido: " + usuario.getRecursosMultimedia().isProtegido());
-
-        }*/
+            ArchivoProxy archivoProxy = new ArchivoProxy(usuario, recurso);
+            archivoProxy.cargar(); // Intenta cargar el archivo
+            archivoProxy.mostrar(); // Intenta mostrar el archivo
+        }
 
         em.close();
 
